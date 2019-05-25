@@ -1,0 +1,20 @@
+{
+  "name": "Transport Streamer",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+
+  "incognito": "split",
+  
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  
+  "permissions": [
+     "activeTab"
+  ],
+
+  "icons": {
+    "128": "icon.png"
+  }
+}
