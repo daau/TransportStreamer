@@ -1,7 +1,7 @@
 {
   "name": "Transport Streamer",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Used to scrape transport stream files",
   "manifest_version": 2,
 
   "incognito": "split",
