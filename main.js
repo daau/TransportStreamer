@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 async function downloadVideos(){
-  let url = 'https://video1.yocoolnet.com/files/mp4/S/G/L/SGLPy';
+  let url = document.getElementById('url').value;
 
   let min = parseInt(document.getElementById('min').value);
   let max = parseInt(document.getElementById('max').value);
