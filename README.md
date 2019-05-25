@@ -12,3 +12,9 @@ To use this chrome extension to download .ts videos,
 3. Determine the number of .ts files which composes the video (the max)
 4. Paste the URL, starting integer (typically 1), and the ending integer for the sequence of .ts files (the max).
 5. Click download
+
+To combine the .ts files into one, run the following commands in terminal, replacing i and j with the min and max number of the .ts sequence
+```
+echo 'name_of_ts_file'{i..j}.ts | tr " " "\n" > tslist
+while read line; do cat $line >> name_of_output_video.ts; done < tslist
+```
