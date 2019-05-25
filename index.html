@@ -6,10 +6,18 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-  <input id="url" placeholder="url">
-  <input id="min" placeholder="min">
-  <input id="max" placeholder="max">
-  <button id="download">Download</button>
+  <div>
+      <h1>Instructions</h1>
+      <p>echo 'bheop1'{1..6}.ts | tr " " "\n" > tslist</p>
+      <p>while read line; do cat $line >> your_new_video.ts; done < tslist</p>
+  </div>
+  <div>
+    <h1>Input</h1>
+    <input id="url" placeholder="url">
+    <input id="min" placeholder="min">
+    <input id="max" placeholder="max">
+    <button id="download">Download</button>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
